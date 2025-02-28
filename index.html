@@ -28,6 +28,11 @@
       <!-- Sidebar -->
       <div id="sidebar">
         <img
+          srcset="
+            ./assets/images/bg-sidebar-desktop.svg 1024w,
+            ./assets/images/bg-sidebar-mobile.svg   600w
+          "
+          sizes="(max-width: 600px) 600px, 1024px"
           src="./assets/images/bg-sidebar-desktop.svg"
           alt="sidebar image"
           class="sidebar-img"
@@ -71,7 +76,7 @@
       </div>
 
       <!-- Step 1 -->
-      <div id="personal-info" class="personal-info-content">
+      <div id="personal-info" class="personal-info-content step-content">
         <div class="step-content-header">
           <h1>Personal Info</h1>
           <p>Please provide your name, email address, and phone number.</p>
@@ -136,7 +141,7 @@
       </div>
 
       <!-- Step 2-->
-      <div id="select-plan" class="select-plan-content">
+      <div id="select-plan" class="select-plan-content step-content">
         <div class="step-content-header">
           <h1>Select Your Plan</h1>
           <p class="step-desc">
@@ -251,7 +256,7 @@
       </div>
 
       <!-- Step 3-->
-      <div id="pick-addons">
+      <div id="pick-addons" class="step-content">
         <div class="step-content-header">
           <h1>Pick add-ons</h1>
           <p class="step-desc">
@@ -357,7 +362,7 @@
       </div>
 
       <!-- Step 4-->
-      <div id="summary">
+      <div id="summary" class="step-content">
         <div class="step-content-header">
           <h1>Finishing up</h1>
           <p class="step-desc">
@@ -365,27 +370,29 @@
           </p>
         </div>
 
-        <div class="summary-content">
-          <div class="summary-section">
-            <div class="summary-section-header">
-              <h6 id="plan-name"></h6>
-              <button
-                id="change-plan"
-                onclick="handleChangePlan()"
-                role="button"
-              >
-                Change
-              </button>
+        <div>
+          <div class="summary-content">
+            <div class="summary-section">
+              <div class="summary-section-header">
+                <h6 id="plan-name"></h6>
+                <button
+                  id="change-plan"
+                  onclick="handleChangePlan()"
+                  role="button"
+                >
+                  Change
+                </button>
+              </div>
+              <span id="plan-total-price"></span>
             </div>
-            <span id="plan-total-price"></span>
+            <hr />
+            <div id="add-ons-summary"></div>
           </div>
-          <hr />
-          <div id="add-ons-summary"></div>
-        </div>
 
-        <div id="total-section">
-          <span id="total-price-title"></span>
-          <span id="total-price"></span>
+          <div id="total-section">
+            <span id="total-price-title"></span>
+            <span id="total-price"></span>
+          </div>
         </div>
 
         <div class="steps-button-group">
