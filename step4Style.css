@@ -1,12 +1,9 @@
-.step-content {
+#summary {
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 1rem;
   flex: 0.8;
-}
-
-#summary {
-  display: none;
 }
 
 .summary-content {
