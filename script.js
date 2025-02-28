@@ -1,43 +1,5 @@
 let curStep;
 
-// const handleStepButton = (event) => {
-//   const defaultEvent = document.getElementById("step-1");
-//   curStep
-//     ? curStep.classList.remove("fill-button")
-//     : defaultEvent.classList.remove("fill-button");
-//   curStep = event.target;
-//   curStep.classList.add("fill-button");
-
-//   switch (parseInt(curStep.innerText)) {
-//     case 1:
-//       document.getElementById("summary").style.display = "none";
-//       document.getElementById("personal-info").style.display = "flex";
-//       document.getElementById("select-plan").style.display = "none";
-//       document.getElementById("pick-addons").style.display = "none";
-//       break;
-//     case 2:
-//       document.getElementById("summary").style.display = "none";
-//       document.getElementById("personal-info").style.display = "none";
-//       document.getElementById("pick-addons").style.display = "none";
-//       document.getElementById("select-plan").style.display = "flex";
-//       break;
-//     case 3:
-//       document.getElementById("summary").style.display = "none";
-//       document.getElementById("personal-info").style.display = "none";
-//       document.getElementById("select-plan").style.display = "none";
-//       document.getElementById("pick-addons").style.display = "flex";
-//       break;
-//     case 4:
-//       console.log(curStep.innerText);
-
-//       document.getElementById("summary").style.display = "flex";
-//       document.getElementById("personal-info").style.display = "none";
-//       document.getElementById("select-plan").style.display = "none";
-//       document.getElementById("pick-addons").style.display = "none";
-//       break;
-//   }
-// };
-
 const handlePersonalInfoNext = () => {
   document.getElementById("summary").style.display = "none";
   document.getElementById("step-4").classList.remove("fill-button");
