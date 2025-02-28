@@ -123,7 +123,11 @@
             />
           </div>
         </div>
-        <button class="steps-next-button" onclick="handlePersonalInfoNext()">
+        <button
+          class="steps-next-button"
+          onclick="handlePersonalInfoNext()"
+          role="button"
+        >
           Next Step
         </button>
       </div>
@@ -145,6 +149,7 @@
             data-name="Arcade"
             data-monthly="9"
             data-yearly="90"
+            role="button"
           >
             <img
               src="./assets/images/icon-arcade.svg"
@@ -167,6 +172,7 @@
             data-name="Advanced"
             data-monthly="12"
             data-yearly="120"
+            role="button"
           >
             <img
               src="./assets/images/icon-advanced.svg"
@@ -189,6 +195,7 @@
             data-name="Pro"
             data-monthly="15"
             data-yearly="150"
+            role="button"
           >
             <img
               src="./assets/images/icon-pro.svg"
@@ -219,10 +226,18 @@
         </div>
 
         <div class="steps-button-group">
-          <button class="steps-back-button" onclick="handleSelectPlanBack()">
+          <button
+            class="steps-back-button"
+            onclick="handleSelectPlanBack()"
+            role="button"
+          >
             Go Back
           </button>
-          <button class="steps-next-button" onclick="handleSelectPlanNext()">
+          <button
+            class="steps-next-button"
+            onclick="handleSelectPlanNext()"
+            role="button"
+          >
             Next Step
           </button>
         </div>
@@ -314,10 +329,18 @@
         </div>
 
         <div class="steps-button-group">
-          <button class="steps-back-button" onclick="handlePickAddOnsBack()">
+          <button
+            class="steps-back-button"
+            onclick="handlePickAddOnsBack()"
+            role="button"
+          >
             Go Back
           </button>
-          <button class="steps-next-button" onclick="handlePickAddOnsNext()">
+          <button
+            class="steps-next-button"
+            onclick="handlePickAddOnsNext()"
+            role="button"
+          >
             Next Step
           </button>
         </div>
@@ -336,7 +359,11 @@
           <div class="summary-section">
             <div class="summary-section-header">
               <h6 id="plan-name"></h6>
-              <button id="change-plan" onclick="handleChangePlan()">
+              <button
+                id="change-plan"
+                onclick="handleChangePlan()"
+                role="button"
+              >
                 Change
               </button>
             </div>
@@ -352,10 +379,16 @@
         </div>
 
         <div class="steps-button-group">
-          <button class="steps-back-button" onclick="handleSummaryBack()">
+          <button
+            class="steps-back-button"
+            onclick="handleSummaryBack()"
+            role="button"
+          >
             Go Back
           </button>
-          <button class="steps-next-button" id="confirm-button">Confirm</button>
+          <button class="steps-next-button" id="confirm-button" role="button">
+            Confirm
+          </button>
         </div>
       </div>
     </div>
