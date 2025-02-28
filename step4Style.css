@@ -5,6 +5,10 @@
   flex: 0.8;
 }
 
+#summary {
+  display: none;
+}
+
 .summary-content {
   background-color: var(--Magnolia);
   padding: 1rem;
