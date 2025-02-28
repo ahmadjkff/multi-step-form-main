@@ -3,7 +3,6 @@ let curStep;
 const handlePersonalInfoNext = () => {
   document.getElementById("summary").style.display = "none";
   document.getElementById("step-4").classList.remove("fill-button");
-  console.log(document.querySelectorAll(".step")[3]);
 
   let valid = true;
   document.querySelectorAll(".personal-info-input").forEach((input) => {
