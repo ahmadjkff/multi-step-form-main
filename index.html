@@ -90,6 +90,7 @@
               id="name"
               name="name"
               placeholder="e.g. Stephen King"
+              aria-label="Name"
             />
           </div>
           <div class="personal-info-input-section">
@@ -105,6 +106,7 @@
               id="email"
               name="email"
               placeholder="e.g. stephenking@example.com"
+              aria-label="Email Address"
             />
           </div>
           <div class="personal-info-input-section">
@@ -120,6 +122,7 @@
               id="number"
               name="number"
               placeholder="e.g. +1 234 567 890"
+              aria-label="Phone Number"
             />
           </div>
         </div>
@@ -219,7 +222,11 @@
             >Monthly</span
           >
           <label class="switch">
-            <input type="checkbox" id="month-year-checkbox" />
+            <input
+              type="checkbox"
+              id="month-year-checkbox"
+              aria-label="change plan monthly or yearly"
+            />
             <span class="slider"></span>
           </label>
           <span class="checkbox-value" id="year">Yearly</span>
@@ -263,6 +270,7 @@
                 data-monthly="1"
                 data-yearly="10"
                 onclick="handleAddOnClick(event)"
+                aria-label="online service"
               />
               <div>
                 <label for="online-service">Online service</label>
@@ -287,6 +295,7 @@
                 data-monthly="2"
                 data-yearly="20"
                 onclick="handleAddOnClick(event)"
+                aria-label="larger storage"
               />
               <div>
                 <label for="larger-storage">Larger storage</label>
@@ -312,6 +321,7 @@
                 data-monthly="2"
                 data-yearly="20"
                 onclick="handleAddOnClick(event)"
+                aria-label="customizable profile"
               />
               <div>
                 <label for="customizable-profile">Customizable Profile</label>
