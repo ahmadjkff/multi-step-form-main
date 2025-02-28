@@ -1,5 +1,4 @@
-#summary {
-  display: none;
+.step-content {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 1rem;
@@ -76,7 +75,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -4rem;
+  /* margin-top: -4rem; */
   padding: 1rem;
 }
 

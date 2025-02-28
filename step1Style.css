@@ -28,3 +28,18 @@
   border: 1px solid var(--Cool-gray);
   border-radius: 5px;
 }
+
+.personal-info-input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info-content label {
+  color: var(--Marine-blue);
+}
+
+.personal-info-content input {
+  padding: 10px;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 5px;
+}

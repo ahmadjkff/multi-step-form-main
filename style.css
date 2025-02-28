@@ -172,21 +172,6 @@ h6 {
   color: var(--Cool-gray);
 }
 
-.personal-info-input-section {
-  display: flex;
-  flex-direction: column;
-}
-
-.personal-info-content label {
-  color: var(--Marine-blue);
-}
-
-.personal-info-content input {
-  padding: 10px;
-  border: 1px solid var(--Cool-gray);
-  border-radius: 5px;
-}
-
 .steps-next-button {
   padding: 10px 20px;
   border: none;
@@ -225,4 +210,52 @@ h6 {
   display: none;
   color: var(--Strawberry-red);
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100%;
+  }
+
+  #container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--Magnolia);
+  }
+
+  #sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+  }
+
+  #sidebar-content {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .step-info {
+    display: none;
+  }
+
+  .sidebar-img {
+    content: url("./assets/images/bg-sidebar-mobile.svg");
+    width: 100%;
+  }
+
+  .step-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    justify-content: center;
+    align-self: center;
+    transform: translateY(-50%);
+    z-index: 1;
+    gap: 2rem;
+    width: 70%;
+  }
 }
