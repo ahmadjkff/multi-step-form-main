@@ -1,0 +1,59 @@
+#pick-addons {
+  display: none;
+  flex-direction: column;
+  /* gap: 4rem; */
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+#add-ons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-on {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.add-on:hover {
+  border: 2px solid var(--Purplish-blue);
+  background-color: var(--Magnolia);
+  transition: all 0.3s ease 0s !important;
+}
+
+.selected-add-on {
+  background-color: var(--Magnolia);
+  border-color: var(--Purplish-blue);
+}
+
+.add-on-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.add-on-left label {
+  color: var(--Marine-blue);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.add-on-left p {
+  color: var(--Cool-gray);
+  font-size: 14px;
+}
+
+.add-on-price {
+  color: var(--Purplish-blue);
+}
+
+.add-on-checkbox {
+  width: 1rem;
+  height: 1rem;
+}

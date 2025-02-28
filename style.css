@@ -1,0 +1,228 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  cursor: pointer;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  /* Primary */
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  /* Neutral */
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Light-blue);
+  font-family: "Ubuntu", serif;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  gap: 5rem;
+  margin: 3rem auto;
+  padding: 1rem;
+  max-width: 100%;
+  width: 1000px; /* Max width for larger screens */
+  background-color: var(--White);
+  border-radius: 10px;
+}
+
+#sidebar {
+  position: relative;
+}
+
+#sidebar-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  z-index: 1;
+  color: var(--White);
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.step-button {
+  background-color: inherit;
+  border: 2px solid var(--White);
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: var(--White);
+}
+
+.fill-button {
+  background-color: var(--Light-blue);
+  color: var(--Marine-blue);
+  font-weight: bold;
+  border: none;
+}
+
+.step-num {
+  color: var(--Light-gray);
+  font-size: 12px;
+}
+
+h6 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.step-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-content-header {
+  margin-top: 3rem;
+}
+
+.step-content-header h1 {
+  color: var(--Marine-blue);
+}
+
+.step-content-header p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--Cool-gray);
+}
+
+.personal-info-input-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info-content label {
+  color: var(--Marine-blue);
+}
+
+.personal-info-content input {
+  padding: 10px;
+  border: 1px solid var(--Cool-gray);
+  border-radius: 5px;
+}
+
+.steps-next-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--Marine-blue);
+  color: var(--White);
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.steps-back-button {
+  padding: 10px 10px;
+  border: none;
+  background-color: inherit;
+  color: var(--Cool-gray);
+  cursor: pointer;
+}
+
+.steps-back-button:hover {
+  color: var(--Marine-blue);
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.steps-button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error-message {
+  display: none;
+  color: var(--Strawberry-red);
+  font-weight: bold;
+}
