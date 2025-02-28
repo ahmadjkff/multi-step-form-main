@@ -1,10 +1,10 @@
-#pick-addons {
+/* #pick-addons {
   display: none;
   flex-direction: column;
-  /* gap: 4rem; */
+  gap: 4rem;
   justify-content: space-between;
   padding-bottom: 1rem;
-}
+} */
 
 #add-ons {
   display: flex;

@@ -91,7 +91,7 @@ body {
 
 #container {
   display: flex;
-  gap: 5rem;
+  gap: 3rem;
   margin: 3rem auto;
   padding: 1rem;
   max-width: 100%;
@@ -158,8 +158,14 @@ h6 {
   flex-direction: column;
 }
 
-.step-content-header {
-  margin-top: 3rem;
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  /* width: 100%; */
+  flex: 1;
+  padding: 3rem;
+  /* height: 700px; */
 }
 
 .step-content-header h1 {
@@ -199,6 +205,7 @@ h6 {
 .steps-button-group {
   display: flex;
   justify-content: space-between;
+  align-content: flex-end;
 }
 
 .input-label {
@@ -247,7 +254,8 @@ h6 {
     width: 100%;
   }
 
-  .step-content {
+  /* .step-content {
+    flex: 0.8;
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -257,5 +265,20 @@ h6 {
     z-index: 1;
     gap: 2rem;
     width: 70%;
+  } */
+  .step-content {
+    width: 70%;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    gap: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex: 0.8;
+
+    transform: translateY(-50%);
+    z-index: 1;
   }
 }
