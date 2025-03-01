@@ -1,11 +1,6 @@
-/* .personal-info-content {
+.personal-info-content {
   display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  color: black;
-  flex: 1;
-  padding-right: 7rem;
-} */
+}
 
 .personal-info-input-group {
   display: flex;

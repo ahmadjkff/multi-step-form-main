@@ -160,12 +160,15 @@ h6 {
 
 .step-content {
   display: flex;
+  display: none;
   flex-direction: column;
+  justify-content: space-between;
   gap: 4rem;
-  /* width: 100%; */
+  width: 100%;
   flex: 1;
   padding: 3rem;
-  /* height: 700px; */
+  height: 568px;
+  padding-bottom: 0;
 }
 
 .step-content-header h1 {
@@ -250,6 +253,7 @@ h6 {
   }
 
   .sidebar-img {
+    position: relative;
     content: url("./assets/images/bg-sidebar-mobile.svg");
     width: 100%;
   }
@@ -267,7 +271,7 @@ h6 {
     width: 70%;
   } */
   .step-content {
-    width: 70%;
+    width: 90%;
     padding: 2rem;
     background-color: white;
     border-radius: 10px;
@@ -277,8 +281,8 @@ h6 {
     justify-content: center;
     align-self: center;
     flex: 0.8;
-
-    transform: translateY(-50%);
+    position: absolute;
+    top: 25%;
     z-index: 1;
   }
 }
